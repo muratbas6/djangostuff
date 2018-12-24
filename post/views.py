@@ -3,4 +3,7 @@ from django.shortcuts import render,HttpResponse
 # Create your views here.
 
 def home_view(request):
-    return HttpResponse("hosgeldiniz nasilsiniz?")
+    return render(request,"home.html",{})
+
+def ikinci_view(request):
+    return render(request,"ikinci.html",{})
